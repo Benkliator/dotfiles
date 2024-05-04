@@ -1,0 +1,48 @@
+window {
+    margin: 5px;
+    background-color: transparent;
+    opacity: 0.9;
+    font-family: "JetBrainsMono Nerd Font";
+}
+
+#input {
+    margin: 0px 0px 5px;
+    border: 5px transparent;
+    background-color: rgba(14, 12, 21, 0.9);
+    color : whitesmoke;
+}
+
+#inner-box {
+    margin: 0px;
+    border: 5px transparent;
+    background-color: rgba(14, 12, 21, 0.9);
+}
+
+#outer-box {
+    margin: 0px;
+    border: 0px transparent; 
+    background-color: rgba(14, 12, 21, 0.9);
+}
+
+#scroll {
+    margin: 0px;
+    border: 5px transparent;
+    border-radius: 0px;
+    background-color: rgba(14, 12, 21, 0.9);
+    /* animation: erscheinen 0.3s linear; */
+}
+
+#text {
+    margin: 1px;
+    border: 0px transparent;
+    /* background-color: #444444; */
+    color: whitesmoke;
+}
+
+#selected {
+    background-color: whitesmoke;
+}
+
+#text:selected {                                                                                                                     
+    color: rgba(14, 12, 21, 1);
+}

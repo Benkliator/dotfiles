@@ -1,0 +1,85 @@
+* {
+font-size: 97%;
+font-family: "JetBrainsMono Nerd Font";
+font-weight: bold;
+background: transparent;
+opacity: 0.9;
+box-shadow: none;
+text-shadow: none;
+}
+
+window#waybar {
+    background: #0e0c15;
+}
+
+#workspaces {
+    background: transparent;
+    padding: 0px 6px;
+}
+
+#workspaces button {
+    color: whitesmoke;
+    background: #0e0c15;
+    padding: 0px 6px;
+    box-shadow: none;
+	text-shadow: none;
+}
+
+#workspaces button.active {
+    color: grey;
+}
+
+#workspaces button:hover {
+    background-color: whitesmoke;
+    color: #0e0c15;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button.focused {
+    color: grey;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button.urgent {
+    background-color: whitesmoke;
+    color: #0e0c15;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#clock {
+    color: whitesmoke;
+    font-weight: normal;
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+#cpu {
+    color: whitesmoke;
+    font-weight: normal;
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+#disk {
+    color: whitesmoke;
+    font-weight: normal;
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+#memory {
+    color: whitesmoke;
+    font-weight: normal;
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+#temperature {
+    color: whitesmoke;
+    font-weight: normal;
+    padding-right: 6px;
+    padding-left: 6px;
+}

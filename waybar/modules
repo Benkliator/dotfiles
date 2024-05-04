@@ -1,0 +1,77 @@
+{
+    "sway/workspaces#kanji": {
+        "disable-scroll": true,
+            "all-outputs": true,
+            "layer": "top",
+            "format": "{icon}",
+            "persistent-workspaces": {
+                "1": [],
+                "2": [],
+                "3": [],
+                "4": [],
+                "5": [],
+            },
+            "format-icons": {
+                "1": "一",
+                "2": "二",
+                "3": "三",
+                "4": "四",
+                "5": "五",
+                "6": "六",
+                "7": "七",
+                "8": "八",
+                "9": "九",
+                "10": "十",
+            }
+    },
+
+        "clock": {
+            "interval": 1,
+            "format": " {:%H:%M:%S     %Y, %d %B, %A}",
+            "tooltip-format": "<tt><small>{calendar}</small></tt>",
+            "calendar": {
+                "mode"          : "year",
+                "mode-mon-col"  : 3,
+                "weeks-pos"     : "right",
+                "on-scroll"     : 1,
+                "format": {
+                    "months":     "<span color='#ffead3'><b>{}</b></span>",
+                    "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                    "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                    "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                    "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                }
+            }
+        },   
+
+        "cpu": {
+            "format": "{usage}% 󰍛",  
+            "interval": 1,
+            "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+        },
+
+        "disk": {
+            "interval": 30,
+            "path": "/",
+            "format": "{percentage_used}% 󰋊",
+            "tooltip": true,
+            "tooltip-format": "{used} / {total} ({percentage_used}%)",
+        },
+
+        "memory": {
+            "interval": 10,
+            "format": "{used:0.1f}GB / {total:0.1f}GB 󰾆",
+            "tooltip": true,
+            "tooltip-format": "{percentage}%",
+        },
+
+        "temperature": {
+            "interval": 10,
+            "tooltip": true,
+            "hwmon-path": ["/sys/class/hwmon/hwmon1/temp1_input", "/sys/class/thermal/thermal_zone0/temp"],
+            "critical-threshold": 82,
+            "format-critical": "{temperatureC}°C {icon}",
+            "format": "{temperatureC}°C {icon}",
+            "format-icons": ["󰈸"],
+        },
+}

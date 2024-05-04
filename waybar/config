@@ -1,0 +1,26 @@
+{
+"include": "~/.config/waybar/modules",
+"layer": "bottom",
+"position": "top",
+"height": 14,
+"margin-left": 10,
+"margin-right": 10,
+"margin-top": 6,
+"margin-bottom": 0,
+	
+"modules-left": [
+	"sway/workspaces#kanji"	
+],
+
+"modules-center": [		
+    "clock"
+],
+		
+"modules-right": [
+    "cpu",
+    "memory",
+    "temperature",
+    "disk",
+],
+
+}
