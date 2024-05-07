@@ -23,6 +23,16 @@ require("lazy").setup({
         },
     },
 
+    { 
+        "ellisonleao/gruvbox.nvim", 
+        lazy = false,
+        name = "gruvbox",
+        priority = 1000, 
+        opts = {
+            transparent_mode = true,
+        },
+    },
+
     -- Treesitter
     {
         "nvim-treesitter/nvim-treesitter",

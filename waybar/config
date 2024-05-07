@@ -21,6 +21,7 @@
     "memory",
     "temperature",
     "disk",
+    "battery",
 ],
 
 }

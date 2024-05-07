@@ -17,11 +17,11 @@ set $menu wofi --show run
 bindsym $mod+d exec $menu
 
 # WALLPAPER
-output * bg ~/Pictures/Wallpapers/red-forest-wallp.jpg fill
+output * bg ~/Pictures/Wallpapers/gruvbox-anime-wallp.png fill
 
 output HDMI-A-1 {
-    adaptive_sync off
-    mode 1920x1080@144.001Hz
+    adaptive_sync on
+    mode 1920x1080@60.001Hz
 }
 
 # BROWSER
@@ -35,6 +35,13 @@ input type:keyboard {
 	repeat_delay 200
 	repeat_rate 25
 }
+
+input type:touchpad {
+    tap enabled
+    natural_scroll enabled
+}
+
+focus_follows_mouse no
 
 # Kill focused window
 bindsym $mod+Shift+q kill
@@ -164,6 +171,8 @@ bindsym Right resize grow width 10px
 bindsym Return mode "default"
 bindsym Escape mode "default"
 }
+
+exec swayidle -w
 
 #
 # Status Bar:

@@ -3,13 +3,13 @@ font-size: 97%;
 font-family: "JetBrainsMono Nerd Font";
 font-weight: bold;
 background: transparent;
-opacity: 0.9;
 box-shadow: none;
 text-shadow: none;
 }
 
 window#waybar {
     background: #0e0c15;
+    opacity: 0.9;
 }
 
 #workspaces {
@@ -26,7 +26,8 @@ window#waybar {
 }
 
 #workspaces button.active {
-    color: grey;
+    color: #0e0c15;
+    background: whitesmoke;
 }
 
 #workspaces button:hover {
@@ -38,8 +39,11 @@ window#waybar {
 
 #workspaces button.focused {
     color: grey;
+    /*background: whitesmoke;
     animation: gradient_f 20s ease-in infinite;
-    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+    padding-left: 24px;
+    padding-right: 24px; */
+    transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 #workspaces button.urgent {
@@ -78,6 +82,13 @@ window#waybar {
 }
 
 #temperature {
+    color: whitesmoke;
+    font-weight: normal;
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+#battery {
     color: whitesmoke;
     font-weight: normal;
     padding-right: 6px;
