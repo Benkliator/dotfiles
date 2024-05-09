@@ -1,0 +1,6 @@
+ignore-empty-password
+image=~/Pictures/Wallpapers/gruvbox-anime-wallp.png
+indicator-idle-visible
+indicator-radius=75
+indicator-thickness=13
+scaling=fill

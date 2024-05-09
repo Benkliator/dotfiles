@@ -2,6 +2,9 @@
 # ~/.config/zsh/.zshrc
 #
 
+#Pintos for school lol
+export PATH=$HOME/School/TDIU16/pintos/src/utils:$PATH
+
 # If not running interactively, don't do anything
 if [[ $- != *i* ]]; then
     return
@@ -65,6 +68,7 @@ KEYTIMEOUT=1
 SAVEHIST=10000
 ZCALC_HISTFILE="${XDG_STATE_HOME:-$HOME/.local/state}/zsh/zcalc_history"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=102'
+
 
 # Aliases
 alias :q='exit'

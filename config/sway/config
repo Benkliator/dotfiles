@@ -1,4 +1,23 @@
 font pango: SourceCodePro Medium 10
+
+set $bg 	#d65d0e
+set $bg-inactive   #323232
+set $bg-urgent     #000000
+set $text          #eeeeec
+set $text-inactive #babdb6
+
+set $bar           #323232
+set $statusline    #e0e0e0
+
+client.focused          $bg           $bg          $text          $bg $bg
+client.unfocused        $bg-inactive  $bg-inactive $text-inactive $bar $bar
+client.focused_inactive $bg-inactive  $bg-inactive $text-inactive $bar $bar
+client.urgent           $bg-urgent    $bg-urgent   $text          $bar $bar
+
+# Opacity
+set $opacity 0.9
+for_window [app_id="zathura"] opacity $opacity
+
 set $mod Mod4
 
 # MOVEMENT
@@ -68,6 +87,7 @@ bindsym $mod+Shift+c reload
 
 # Exit sway (logs you out of your Wayland session)
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+bindsym $mod+Ctrl+l exec swaylock 
 
 #for_window [app_id="kitty"] floating enable
 

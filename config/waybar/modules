@@ -96,4 +96,11 @@
             "on-click-middle": "~/.config/hypr/scripts/ChangeBlur.sh",
             "on-click-right": "~/.config/hypr/scripts/Wlogout.sh",
         },
+
+        "custom/gpu-usage": {
+            "exec": "cat /sys/class/hwmon/hwmon2/device/gpu_busy_percent",
+            "format": "GPU: {}%",
+            "return-type": "",
+            "interval": 1
+        }
 }
